@@ -1,0 +1,130 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+     /* Wysokość stopki */
+}
+
+body {
+    background-color: #C3C3C3;
+    margin: 0;
+    margin-bottom: 0px;
+}
+
+.green-belt {
+    width: 100%;
+    height: 150px;
+    background-color: #285627;
+    margin-bottom: 0px;
+}
+
+#app-name {
+    margin-top: 0;
+    font-family: "Just Another Hand", cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: #ffffff;
+        font-size: 100px;
+        text-align: center;
+        text-shadow: 0px 0px 5px #222222;
+}
+
+#footer {
+    height: 120px;
+    background-color: #285627;
+    margin-bottom: 0px;
+    color: #ffffff;
+    font-family: "Georgia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    text-shadow: 0px 0px 5px #222222;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Dodaj tę linię */
+}
+
+/* Logowanie i Rejestracja*/
+.user-box {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 12px;
+    text-align: center;
+    width: 487px;
+    height: 329px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.center {
+    background-color: rgba(195, 195, 195, 1);
+    height: calc(100vh - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* przyciski logowania i rejestracji */
+.log-button {
+    background-color: rgba(44, 98, 57, 1);
+    color: white;
+    width: 256px;
+    height: 71px;
+    font-size: 48px;
+    font-family: "Just Another Hand", cursive;
+    border: none;
+    border-radius: 12px;
+    display: block;
+    margin: 40px auto;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* obrazy na ekranie logowania */
+.imagefromlog1 {
+    width: 25%;
+    height: 25%;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: inline-block;
+    float: left;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.imagefromlog2 {
+    width: 25%;
+    height: 25%;
+    margin-top: 5%;
+    margin-right: 5%;
+    display: inline-block;
+    float: right;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.pass, .usr {
+    font-family: "Georgia", cursive;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.usr {
+    margin-top: 50px;
+}
+
+.PASS, .USR {
+    height: 30px;
+    width: 250px;
+    border: none;
+    padding: 10px;
+    border-radius: 8px; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 5px;
+}
