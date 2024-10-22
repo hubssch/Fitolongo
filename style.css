@@ -226,8 +226,16 @@ p {
     text-align: left;
     /* justify-content: center; */
     border-radius: 8px;
-    border: 3px solid #222222;
+    border: 2px solid #222222;
     display: flex;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trainer:hover {
+    transform: scale(1.05);
+    border: 3px solid #222222;
+    background-color: #cacaca;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #trainer-list-header {
