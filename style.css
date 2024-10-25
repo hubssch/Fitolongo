@@ -260,3 +260,103 @@ p {
 .trainer-rating {
     margin: auto 20px auto 0;
 }
+
+.form-container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #222222;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 2.5em;
+    color: #285627;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #285627;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.avatar-section,
+.certificates-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.avatar-section img,
+.certificates-section img {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #222222;
+    border-radius: 8px;
+}
+
+.avatar-section input,
+.certificates-section input {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #285627;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+/* .green-belt {
+    background-color: #285627;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 3em;
+    text-shadow: 0px 0px 5px #222222;
+  } */
+
+#footer {
+    height: 120px;
+    background-color: #285627;
+    color: #ffffff;
+    font-family: "Just Another Hand", cursive;
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 0px 0px 5px #222222;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

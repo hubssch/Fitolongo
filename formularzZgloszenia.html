@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+    <title>Fitolongo Submission</title>
+    <style>
+      
+
+    </style>
+  </head>
+  <body>
+    <div class="green-belt">
+      <h1 id="app-name">Fitolongo</h1>
+    </div>
+
+    <div class="form-container">
+      <h2>Submission</h2>
+      <form action="/submit" method="POST">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" />
+
+        <label for="specialization">Specialization:</label>
+        <select id="specialization" name="specialization">
+          <option value="personal_trainer">Personal Trainer</option>
+          <option value="dietitian">Dietitian</option>
+          <option value="physiotherapist">Physiotherapist</option>
+        </select>
+
+        <label for="city">City:</label>
+        <select id="city" name="city">
+          <option value="warsaw">Warsaw</option>
+          <option value="krakow">Krakow</option>
+          <option value="poznan">Poznan</option>
+          <option value="gdansk">Gdansk</option>
+        </select>
+
+        <label for="gym">Gym:</label>
+        <select id="gym" name="gym">
+          <option value="fitness_world">Fitness World</option>
+          <option value="pure_jatomi">Pure Jatomi</option>
+          <option value="zdrofit">Zdrofit</option>
+        </select>
+
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" />
+
+        <label for="description">Add Description:</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+
+        <div class="avatar-section">
+          <label for="avatar">Add Avatar:</label>
+          <img src="" alt="Avatar" id="avatarPreview" />
+          <input
+            type="file"
+            id="avatar"
+            name="avatar"
+            accept="image/*"
+            onchange="previewAvatar(event)"
+          />
+        </div>
+
+        <div class="certificates-section">
+          <label for="certificate">Add Certificate:</label>
+          <img src="" alt="Certificate" id="certificatePreview" />
+          <input
+            type="file"
+            id="certificate"
+            name="certificate"
+            accept="image/*"
+            onchange="previewCertificate(event)"
+          />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer class="green-belt" id="footer">
+      Stań się Wielki, spraw by chude szczury były w strachu
+    </footer>
+
+    <script>
+      function previewAvatar(event) {
+        const avatarPreview = document.getElementById('avatarPreview');
+        avatarPreview.src = URL.createObjectURL(event.target.files[0]);
+      }
+
+      function previewCertificate(event) {
+        const certificatePreview = document.getElementById('certificatePreview');
+        certificatePreview.src = URL.createObjectURL(event.target.files[0]);
+      }
+    </script>
+  </body>
+</html>
